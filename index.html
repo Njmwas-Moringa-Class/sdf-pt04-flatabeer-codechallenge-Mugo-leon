@@ -12,43 +12,35 @@
   <body>
     <header>
       <h1>FlataBeer</h1>
-      <nav>
-        <ul id="beer-list">
-          <li>Beer Name</li>
-          <li>Another Beer Name</li>
-          <li>And Another Beer Name</li>
-        </ul>
-      </nav>
     </header>
 
     <main>
       <div class="beer-details">
-        <h2 id="beer-name">Beer Name Goes Here</h2>
+        <h2 id="beer-name"></h2>
+        <input type="text" id="new-beer-name" placeholder="Enter Beer Name">
+        <button id="add-beer-name">Add Beer Name</button>
         <img
           id="beer-image"
           alt="Beer Name Goes Here"
           src="assets/image-placeholder.jpg"
         />
         <p>
-          <em id="beer-description">Beer Description Goes Here</em>
+          <em id="beer-description"></em>
         </p>
 
         <form id="description-form">
-          <label for="description">Edited Description:</label>
+          <label for="description">Description:</label>
           <textarea id="description"></textarea>
           <button type="submit">Update Beer</button>
         </form>
-
-        <h3>Customer Reviews</h3>
-        <ul id="review-list">
-          <li>Replace with actual reviews</li>
-          <li>From the server</li>
-        </ul>
         <form id="review-form">
           <label for="review">Your Review:</label>
           <textarea id="review"></textarea>
           <button type="submit">Add review</button>
         </form>
+        <h3>Customer Reviews</h3>
+        <ul id="review-list">
+        </ul>
       </div>
     </main>
   </body>
