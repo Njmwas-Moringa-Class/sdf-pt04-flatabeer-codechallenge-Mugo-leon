@@ -7,8 +7,31 @@ document.addEventListener('DOMContentLoaded', function () {
       const newBeerName = newBeerNameInput.value;
       if (newBeerName) {
         beerNameInput.textContent = newBeerName;
-        newBeerNameInput.value = ''; // Clear the input field
+        newBeerNameInput.value = ''; 
+      }
+    });
+  });
+ 
+  document.addEventListener('DOMContentLoaded', function () {
+    const fileInput = document.getElementById('file-input');
+    const beerImage = document.getElementById('beer-image');
+  
+    fileInput.addEventListener('change', function () {
+      const selectedFile = fileInput.files[0];
+  
+      if (selectedFile) {
+        const reader = new FileReader();
+        
+        reader.onload = function () {
+          beerImage.src = reader.result;
+        };
+        
+        reader.readAsDataURL(selectedFile);
+      } else {
+        
+        beerImage.src = 'assets/image-placeholder.jpg';
       }
     });
   });
   
+

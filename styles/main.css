@@ -52,19 +52,27 @@ main {
   width: 600px;
 }
 
-.beer-details h2 {
-  font-size: 32px;
+.beer-details {
   text-align: center;
 }
 
-.beer-details h3 {
+h2#beer-name {
   font-size: 24px;
+  margin-bottom: 10px; 
 }
 
-.beer-details img {
+#new-beer-name {
+  margin-bottom: 10px;
+}
+
+#file-input {
   display: block;
-  height: 200px;
-  margin: 0 auto 25px auto;
+  margin-top: 20px;
+}
+
+#beer-image {
+  display: block;
+  margin-top: 20px;
 }
 
 form {
